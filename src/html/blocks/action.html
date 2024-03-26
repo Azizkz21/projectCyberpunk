@@ -1,0 +1,107 @@
+<section class="action">
+  <span class="action__decorative-top"></span>
+  <div class="action__wrapper">
+    <span class="action__icon">
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="./img/action/action-tablet.svg"
+        />
+        <img src="./img/action/action-mobile.svg" alt="action-icon" />
+      </picture>
+    </span>
+    <div class="action__device">
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/action/xbox_tablet.png    1x,
+            ./img/action/xbox_tablet@2x.png 2x
+          "
+        />
+        <img
+          class="action__xbox"
+          src="./img/action/xbox_mobile.png"
+          srcset="./img/action/xbox_mobile@2x.png 2x"
+          alt="image-xbox"
+        />
+      </picture>
+
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/action/ps_tablet.png    1x,
+            ./img/action/ps_tablet@2x.png 2x
+          "
+        />
+        <img
+          class="action__ps"
+          src="./img/action/ps_mobile.png"
+          srcset="./img/action/ps_mobile@2x.png 2x"
+          alt="image-playstation"
+        />
+      </picture>
+    </div>
+    <div class="action__info-top">
+      <div class="action__title-block">
+        <h2 class="action__title">Играй и выигрывай!</h2>
+      </div>
+
+      <p class="action__text">
+        Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть
+        консоль <span>Xbox Series X</span> или
+        <span>Sony PlayStation 5!</span> Заполни <br> форму ниже и приложи скриншот о
+        покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;
+      </p>
+    </div>
+    <div class="action__info">
+      <form
+        class="action__form"
+        action="https://echo.htmlacademy.ru/"
+        method="get"
+      >
+        <div class="action__form--inner">
+          <label>
+            <input
+              class="action__input action__user"
+              type="text"
+              name="userName"
+              placeholder="Как тебя зовут?"
+              required
+            />
+          </label>
+          <label>
+            <input
+              class="action__input action__email"
+              type="email"
+              name="email"
+              placeholder="Твой е-mail"
+              required
+            />
+          </label>
+          <div class="action__screenshot">
+            <span>Прикрепить скриншот</span>
+          </div>
+          <div class="action__form-sumbit">
+            <button class="action__form-button" type="submit">Отправить</button>
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="checkbox"
+                name="action__form"
+                value="action__true"
+                checked
+              />
+              <span class="control-mark"></span>
+              <span class="control-label"
+                >Согласен на обработку персональных данных</span
+              >
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <span class="action__decorative-bottom"></span>
+</section>

@@ -1,0 +1,133 @@
+.preview__wrapper {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 70px 0;
+  padding-bottom: 140px;
+}
+.preview__top {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 12px;
+}
+.preview__title {
+  font-family: $accent-Archangelsk;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30.63px;
+}
+.preview__text {
+  font-family: $regular-Robot;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $color-muted;
+
+  span {
+    font-family: $bold-Robot;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: $color-title;
+  }
+}
+.preview__picture {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.preview__img-top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.preview__img {
+  clip-path: $clip-polygon-mb;
+}
+
+.preview__img-3{
+  clip-path: $clip-polygon-big-mb;
+}
+
+@media (min-width: $tablet-width) {
+  .preview__wrapper {
+    min-width: 320px;
+    align-items: flex-start;
+    gap: 59px;
+    padding: 70px 36px 140px;
+
+  }
+  .preview__top {
+    width: 100%;
+    max-width: 788px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 0;
+  }
+  .preview__title {
+    font-size: 62px;
+    line-height: 62.63px;
+  }
+  .preview__text {
+    font-size: 18px;
+    line-height: 34px;
+
+    span {
+      font-size: 18px;
+      line-height: 34px;
+    }
+  }
+  .preview__picture {
+    align-self: center;
+    gap: 32px;
+  }
+
+  .preview__img-top {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .preview__img {
+  clip-path: $clip-polygon-tabletPreview;
+}
+
+.preview__img-3{
+  clip-path: $clip-polygon-big-tabletPreview;
+}
+}
+
+@media (min-width: $desktop-width) {
+  .preview__wrapper {
+    max-width: 1352px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  .preview__top {
+    max-width: 996px;
+  }
+
+  .preview__title {
+    br{
+      display: none;
+    }
+  }
+
+  .preview__picture {
+    align-self: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .preview__img-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

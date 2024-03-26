@@ -1,0 +1,101 @@
+// background
+$accent-background: rgba(248, 242, 0, 1);
+$page-background: rgba(0, 0, 0, 1);
+$muted-bg: rgba(119, 119, 119, 1);
+$white-bg: rgba(255, 255, 255, 1);
+
+// fonts
+$light-Robot: "Roboto Light", sans-serif;
+$regular-Robot: "Roboto Regular", sans-serif;
+$bold-Robot: "Roboto Bold", sans-serif;
+$accent-Archangelsk: "Archangelsk", sans-serif;
+
+// color
+$color-accent: rgba(248, 242, 0, 1);
+$color-title: #52bedc;
+$color-muted: #777777;
+$color-white: rgba(255, 255, 255, 1);
+$color-black: #000;
+
+// media
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
+// css style
+
+// preview-tablet
+$clip-polygon-tabletPreview: polygon(
+  11% 0,
+  100% 0,
+  100% 30%,
+  100% 74%,
+  89% 100%,
+  0 100%,
+  0% 70%,
+  0 26%
+);
+
+$clip-polygon-big-tabletPreview: polygon(
+  5% 0,
+  100% 0,
+  100% 30%,
+  100% 88%,
+  95% 100%,
+  0 100%,
+  0% 70%,
+  0 12%
+);
+
+// header
+
+$clip-polygon-tablet: polygon(
+  8% 0,
+  100% 0,
+  100% 30%,
+  100% 86%,
+  92% 100%,
+  0 100%,
+  0% 70%,
+  0 14%
+);
+
+$clip-polygon-mb: polygon(
+  16% 0,
+  100% 0,
+  100% 30%,
+  100% 75%,
+  84% 100%,
+  0 100%,
+  0% 70%,
+  0 24%
+);
+
+// preview
+$clip-polygon-big-mb: polygon(
+  16% 0,
+  100% 0,
+  100% 30%,
+  100% 88%,
+  84% 100%,
+  0 100%,
+  0% 70%,
+  0 12%
+);
+
+:root {
+  --container-width: 1200px;
+  --container-padding: 40px;
+
+  --font-main: "Poppins", sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  --page-bg: #fff;
+  --text-color: #000;
+  --accent: #ac182c;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

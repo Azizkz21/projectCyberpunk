@@ -1,0 +1,150 @@
+.price {
+  background-color: $page-background;
+  color: $color-white;
+}
+
+.price__wrapper {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 0 71px;
+}
+
+.price__img {
+  height: 100%;
+}
+
+.price__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 12px;
+}
+.price__title {
+  font-family: $accent-Archangelsk;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30.63px;
+}
+.price__set {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.price__title2 {
+  font-family: $bold-Robot;
+  font-size: 20px;
+  line-height: 23.44px;
+  color: $color-title;
+}
+
+.price__set-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 17px;
+}
+.price__set-item {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 20px;
+
+ 
+}
+.price__set-text {
+  font-family: $regular-Robot;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.price__platform {
+  display: flex;
+  flex-direction: column;
+  gap: 25.85px;
+}
+
+.platform__list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 60px;
+  row-gap: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+  }
+
+  .price__img {
+    min-width: 332px;
+    width: 100%;
+  }
+
+  .price__inner {
+    gap: 25px;
+    padding: 70px 32px 71px;
+  }
+  .price__title {
+    font-size: 62px;
+    line-height: 62.63px;
+  }
+  .price__set {
+    gap: 15px;
+    margin-bottom: 45px;
+  }
+  .price__title2 {
+    font-size: 24px;
+    line-height: 28.13px;
+  }
+
+  .price__set-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .price__set-item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .price__set-text {
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+  .price__platform {
+    display: flex;
+    flex-direction: column;
+    gap: 25.85px;
+  }
+
+  .platform__list {
+    column-gap: 79px;
+    row-gap: 47.81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__img {
+    min-width: 49vw;
+  }
+  .price__inner {
+    width: 100%;
+    min-width: 50vw;
+  }
+  .price__set-list {
+    gap: 15px;
+  }
+  .price__set-item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .price__platform {
+    display: flex;
+    flex-direction: column;
+    gap: 25.85px;
+  }
+}

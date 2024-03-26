@@ -1,0 +1,110 @@
+.footer__wrapper {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo--block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25.35px;
+  padding: 40px 12px 25px;
+}
+.footer__license-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 12px;
+  background-color: $muted-bg;
+}
+.license__text {
+  font-family: $regular-Robot;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.footer__copyRaight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $page-background;
+  color: $color-white;
+  padding: 13px;
+}
+.copyRaight__text {
+  text-align: center;
+  font-family: $regular-Robot;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__inner {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 64px;
+    padding: 14px 36px;
+  }
+  .footer__logo--block {
+    min-width: 300px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+  }
+  .footer__license-block {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 32px;
+    padding: 0;
+    background-color: $white-bg;
+  }
+  .license__text {
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+  .footer__copyRaight {
+    padding: 13px 36px;
+  }
+  .copyRaight__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__inner {
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 64px;
+    padding: 14px 36px;
+  }
+  .footer__logo--block {
+    min-width: 300px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+  }
+  .footer__license-block {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+    background-color: $white-bg;
+  }
+}
